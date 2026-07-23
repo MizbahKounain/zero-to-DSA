@@ -1,0 +1,11 @@
+Abstraction:
+
+1. Hides implementation complexity
+2. Focuses on what an object does
+3. Achieved mainly using interfaces and abstract classes
+
+Encapsulation:
+
+1. Hides/protects internal data
+2. Focuses on controlling how data is accessed/changed
+3. Achieved mainly using private fields + methods/getters/setters
