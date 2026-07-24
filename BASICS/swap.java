@@ -25,7 +25,7 @@ public class swap {
         b = a ^ b;
         a = a ^ b;
         System.out.println("Swap without a 3rd variable: a - " + a + ", b - " + b);
-
+        sc.close();
     }
 
 }
