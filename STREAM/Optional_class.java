@@ -12,6 +12,10 @@ public class Optional_class {
                 .findFirst();
         System.out.println(name.get());
 
+        // This avoids NullPointerException
+        // If there is no name which contains "x" then it will give NullPointerException
+        // so to avoid it we should use Optional classes
+
     }
 
 }
