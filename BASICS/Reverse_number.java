@@ -3,14 +3,18 @@ package BASICS;
 import java.util.Scanner;
 
 public class Reverse_number {
-    public static int reverse(int n) {
-        int rev = 0;
+    public static int reverse(long n) {
+        long rev = 0;
         while (n != 0) {
-            int reminder = n % 10;
+            long reminder = n % 10;
             rev = (rev * 10) + reminder;
             n /= 10;
         }
-        return rev;
+        // If considering overflow
+        if (rev > Integer.MAX_VALUE || rev < Integer.MIN_VALUE)
+            return 0;
+        else
+            return (int) rev;
     }
 
     public static int reverseNumber(String s) {
@@ -22,7 +26,7 @@ public class Reverse_number {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // If number starts from non-zero
-        int n = sc.nextInt();
+        long n = sc.nextLong();
         System.out.println(reverse(n));
 
         // If number starts from a zero
@@ -30,5 +34,4 @@ public class Reverse_number {
         System.out.println(reverseNumber(s));
         sc.close();
     }
-
 }
