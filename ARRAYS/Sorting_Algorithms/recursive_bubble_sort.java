@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class recursive_bubble_sort {
     public static void sort(int[] arr, int n) {
-        if (n == 1)
+        if (n <= 1)
             return;
         boolean swapped = false;
         for (int i = 0; i < n - 1; i++) {
@@ -16,7 +16,7 @@ public class recursive_bubble_sort {
                 swapped = true;
             }
         }
-        // We can stop early if no swaps occur during a pass.
+        // We can stop early if no swaps occur during a pass, which is optional
         if (swapped == false)
             return;
         sort(arr, n - 1);
