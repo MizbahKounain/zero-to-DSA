@@ -50,3 +50,5 @@ public class merge_sort {
     }
 
 }
+
+// Time com: O(n logn)
