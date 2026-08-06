@@ -53,3 +53,4 @@ public class merge_sort {
 
 // Time com: O(n logn)
 // Requires extra array; extra space required
+// Space com: O(n)
