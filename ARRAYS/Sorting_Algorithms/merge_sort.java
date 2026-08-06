@@ -32,6 +32,11 @@ public class merge_sort {
         }
         for (int k = 0; k < merge.length; k++) {
             nums[start + k] = merge[k];
+            /*
+             * because the temporary array (merge) is freshly created starting at index 0,
+             * while the section of the original array (numb) we are updating is located
+             * at a specific sub-range starting at the index start.
+             */
         }
 
         return nums;
